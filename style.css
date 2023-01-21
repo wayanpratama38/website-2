@@ -48,7 +48,7 @@ body{
     font: 16px/28px georgia, sans-serif ;
     background-color: #3C6255;
     color: #EAE7B1;
-    background-image: url(leaves.png);
+    background-image: url(img/leaves.png);
 
 }
 
@@ -86,7 +86,7 @@ body{
 
 .gambar {
     height: 300px;
-    background-image: url(Gambar2.jpg);
+    background-image: url(img/Gambar2.jpg);
     background-size:cover;
     background-position: 0px -250px;
     border-top: 10px solid #A6BB8D ;
