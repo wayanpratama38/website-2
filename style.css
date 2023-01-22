@@ -52,18 +52,44 @@ body{
 
 }
 
-.container {
-    width: 800px;
-    margin: auto;
-    background-color: #61876E;
-
+.tabbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+    height: 40px;
+    background-color: lightgreen;
 }
 
+.container {
+    width: 960px;
+    margin: 80px auto;
+    background-color: #61876E;
+    position: relative;
+}
+
+
+
+/* header */
 .header{
     padding: 20px;
 }
 
-.header .judul{
+.ig{
+    background-image: url(img/instaa.png);
+    width: 200px;
+    height: 182px;
+    background-repeat: no-repeat;
+    text-indent: 9999;
+    display: inline-block;
+    position: absolute;
+    right: -100px;
+    top: 10px;
+}
+
+
+.judul{
     font-size: 40px;
     font-style: bold;
     margin-bottom: 15px;
@@ -84,6 +110,7 @@ body{
     padding-right: 15px;
 }
 
+/* gambar */
 .gambar {
     height: 300px;
     background-image: url(img/Gambar2.jpg);
@@ -94,47 +121,103 @@ body{
     
 }
 
+/* main */
+
+.konten2{
+    width: 300px;
+    padding-top: 10px;
+    border: 1px solid black;
+    float: right;
+}
+
+.konten2 h3{
+    font-size: 15px;
+    color: #EAE7B1;
+    font-style: bold;
+}
+
+
+.konten2 .gambarpenulis{
+    width: 150px;
+    height: 200px;
+    background-color: black;
+    float: left;
+    margin: 10px;
+}
+
+.konten2 p{
+    color: #EAE7B1 ;
+    font-size: 12px;
+    margin: 10px;
+}
+
 .konten{
     padding-top:20px;
-    padding-left: 30px;
+    width: 600px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    float: left;
 }
 
 .konten h2{
     font-size: 20px;
     font-style: bold;
-
+    box-sizing: border-box;
+    text-indent: 10px;    
 }
 .konten .para1{
     padding-top: 5px;
     padding-bottom: 20px;
+    box-sizing: border-box;
+    text-indent: 10px;
 }
 
 .konten .para1 a{
     text-decoration: none;
     color:#A6BB8D ;
     font-style: italic;
+    box-sizing: border-box;
 }
 
-.konten .para1{
-    text-indent: 0px;
-
-}
 
 .konten p{
     text-indent: 10px;
     padding-bottom: 10px;
     text-align: justify;
     font-size: 14px;
+    box-sizing: border-box;
+    padding-left: 10px;  
 }
+
 
 .footer{
     background-color: black;
     margin-top: 20px;
     padding: 10px;
+    width: 960px;
+    box-sizing: border-box;
+    float: left;
 }
 
 .footer .copy{
     text-align: center;
     color:#EAE7B1 ;
     font-size: 15px;
+}
+
+
+
+/* clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
 }
